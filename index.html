@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boxwood Gardens of the Mid-Atlantic</title>
+  <title>Boxwood Gardens of the Mid-Atlantic — Yes, Really</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -233,9 +233,42 @@
 
     .gardens-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 2px;
       margin: 0 3rem;
+    }
+
+    /* ── CORNWALLIS SPOTLIGHT ── */
+    .cornwallis-spotlight {
+      margin: 1.5rem 0 0;
+      border-top: 1px solid var(--green-pale);
+      padding-top: 1.25rem;
+    }
+
+    .cornwallis-spotlight-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    .cornwallis-img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      object-position: center 20%;
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+
+    .cornwallis-caption {
+      font-size: 0.82rem;
+      font-style: italic;
+      color: var(--stone);
+      font-weight: 300;
+      line-height: 1.6;
     }
 
     .garden-card {
@@ -570,6 +603,7 @@
       .hero-image-placeholder { min-height: 300px; }
       .intro { grid-template-columns: 1fr; padding: 3rem 2rem; gap: 1.5rem; }
       .gardens-grid { grid-template-columns: 1fr; margin: 0 1rem; }
+      .cornwallis-img { height: 200px; }
       .features { grid-template-columns: 1fr; padding: 3rem 2rem; }
       #about { grid-template-columns: 1fr; padding: 4rem 2rem; gap: 2rem; }
       .about-image { height: 280px; }
@@ -594,9 +628,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-text">
-      <p class="hero-eyebrow">Mid-Atlantic Garden Guide</p>
+      <p class="hero-eyebrow">Mid-Atlantic Garden Guide · Est. Probably Too Recently</p>
       <h1 class="hero-title">The Living Art of<br><em>Boxwood Gardens</em></h1>
-      <p class="hero-subtitle">Exploring the Mid-Atlantic's finest collections of Buxus — where centuries of horticultural tradition meet ongoing botanical research.</p>
+      <p class="hero-subtitle">Exploring the Mid-Atlantic's finest collections of Buxus — where centuries of horticultural tradition meet ongoing botanical research, and at least one person has made an entire website about shrubs.</p>
       <a class="hero-cta" href="#gardens">Explore the Gardens →</a>
     </div>
     <div class="hero-image">
@@ -608,7 +642,7 @@
   <section class="intro">
     <p class="intro-label">About This Site</p>
     <p class="intro-body">
-      The genus <strong>Buxus</strong> has shaped formal gardens for over two thousand years. In the Mid-Atlantic, two collections stand out as premier destinations for enthusiasts and researchers alike — one a living reference library tucked into the Virginia countryside, the other a landmark of American botanical science in the heart of Washington, D.C.
+      The genus <strong>Buxus</strong> has shaped formal gardens for over two thousand years — and yet, somehow, no one had made a dedicated Mid-Atlantic boxwood garden website. Until now. You're welcome. Three collections are featured here: a living reference library in the Virginia countryside, a landmark of American botanical science in Washington, D.C., and a colonial garden in Yorktown where the boxwoods have witnessed considerably more history than most shrubs are asked to.
     </p>
   </section>
 
@@ -616,7 +650,7 @@
   <section id="gardens">
     <div class="section-header">
       <p class="section-eyebrow">Featured Collections</p>
-      <h2 class="section-title">Two Premier Boxwood Gardens</h2>
+      <h2 class="section-title">Three Premier Boxwood Gardens<br><span style="font-size:0.6em; font-style:italic; color:var(--stone);">(yes, three)</span></h2>
     </div>
 
     <div class="gardens-grid">
@@ -635,7 +669,7 @@
           <p class="card-location">Boyce, Clarke County, VA</p>
           <h3 class="card-title">ABS Memorial Garden<br>at Blandy Experimental Farm</h3>
           <p class="card-description">
-            Founded in 1961 by a group of gardeners alarmed by the spread of boxwood decline throughout Virginia, the American Boxwood Society made its permanent home at Blandy's Orland E. White Arboretum. The ABS Memorial Garden — developed in 1974 as a tribute to Society founders Henry Hohman and Dr. John T. Baldwin — has grown into the largest reference collection of its kind, showcasing over 162 labeled cultivars across manicured beds on the arboretum's 172-acre grounds.
+            Founded in 1961 by a group of gardeners deeply alarmed by the spread of boxwood decline throughout Virginia (as one would be), the American Boxwood Society made its permanent home at Blandy's Orland E. White Arboretum. The ABS Memorial Garden — developed in 1974 as a tribute to Society founders Henry Hohman and Dr. John T. Baldwin — has grown into the largest reference collection of its kind, showcasing over 162 labeled cultivars across manicured beds on the arboretum's 172-acre grounds. A serious institution for serious shrub people.
           </p>
           <div class="card-stats">
             <div class="stat-item">
@@ -669,7 +703,7 @@
           <p class="card-location">Northeast Washington, D.C.</p>
           <h3 class="card-title">National Boxwood Collection<br>U.S. National Arboretum</h3>
           <p class="card-description">
-            Established by an act of Congress in 1927 and administered by the USDA's Agricultural Research Service, the U.S. National Arboretum's boxwood holdings are among the most comprehensive in the temperate world. The National Boxwood Collection comprises over 180 taxa — species, varieties, and cultivars — and serves as a critical resource for botanical research, plant breeding, and disease resistance studies. It also serves as a sister backup collection to the ABS Memorial Garden at Blandy.
+            Established by an act of Congress in 1927 — because some things are simply too important to leave to chance — the U.S. National Arboretum's boxwood holdings are among the most comprehensive in the temperate world. The National Boxwood Collection comprises over 180 taxa and serves as a critical resource for botanical research, plant breeding, and disease resistance studies. It also acts as a backup collection to Blandy, because apparently the nation requires a boxwood redundancy plan.
           </p>
           <div class="card-stats">
             <div class="stat-item">
@@ -689,6 +723,44 @@
         </div>
       </article>
 
+      <!-- CARD 3: Nelson House -->
+      <article class="garden-card">
+        <div class="card-image">
+          <img src="nelson-garden.jpg" alt="Boxwood garden at Nelson House, Yorktown" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          <span class="card-tag">Virginia</span>
+        </div>
+        <div class="card-body">
+          <p class="card-location">Yorktown, York County, VA</p>
+          <h3 class="card-title">The Boxwood Garden<br>at Nelson House</h3>
+          <p class="card-description">
+            Built around 1730 and managed today by the National Park Service, Nelson House is one of the finest surviving Georgian mansions in Virginia — and it has the cannonball scars to prove it. The walled rear garden features a sprawling collection of old boxwoods, planted in the formal colonial tradition and left largely to their own devices, which lends the whole scene a pleasingly wild dignity. The house was famously used as Lord Cornwallis's headquarters during the 1781 Siege of Yorktown, making its garden perhaps the most historically dramatic place in the Mid-Atlantic to admire a shrub.
+          </p>
+          <div class="card-stats">
+            <div class="stat-item">
+              <span class="stat-value">~1730</span>
+              <span class="stat-label">House Built</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">1968</span>
+              <span class="stat-label">NPS Acquired</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Free</span>
+              <span class="stat-label">Admission</span>
+            </div>
+          </div>
+
+          <!-- Cornwallis Spotlight -->
+          <div class="cornwallis-spotlight">
+            <p class="cornwallis-spotlight-label">🎖 Notable Garden Feature</p>
+            <img class="cornwallis-img" src="nelson-cornwallis.jpg" alt="Bronze memorial plaque of Earl Cornwallis on the garden wall at Nelson House" />
+            <p class="cornwallis-caption">Tucked into the garden wall is a bronze memorial plaque to Earl Cornwallis, Commander of the British Forces — erected, with admirable diplomatic spirit, by the Virginia Yorktown Sesquicentennial Commission as "a testimonial of the affection of Virginia for the Mother Country." Whether the boxwoods share this affection is unrecorded.</p>
+          </div>
+
+          <a class="card-link" style="margin-top:1.25rem; display:inline-flex;" href="https://www.nps.gov/york/learn/historyculture/nelsonhouse.htm" target="_blank" rel="noopener">Visit Nelson House →</a>
+        </div>
+      </article>
+
     </div>
   </section>
 
@@ -697,17 +769,17 @@
     <div class="feature-item">
       <span class="feature-icon">🔬</span>
       <h4 class="feature-title">Living Reference Libraries</h4>
-      <p class="feature-text">Both gardens function as scientific reference collections — every plant labeled, documented, and available for study by researchers, breeders, and curious visitors alike.</p>
+      <p class="feature-text">The Blandy and National Arboretum collections function as scientific reference libraries — every plant labeled, documented, and available for study. The boxwoods at Nelson House are more of a living history exhibit, but they're doing great.</p>
     </div>
     <div class="feature-item">
       <span class="feature-icon">🤝</span>
       <h4 class="feature-title">Mutual Conservation</h4>
-      <p class="feature-text">The Blandy and National Arboretum collections serve as mutual backup repositories, ensuring cultivar diversity is protected if disease threatens one site.</p>
+      <p class="feature-text">Blandy and the National Arboretum serve as mutual backup repositories, ensuring cultivar diversity is protected if disease threatens one site. Two redundant boxwood archives — as nature, and apparently the U.S. Congress, intended.</p>
     </div>
     <div class="feature-item">
       <span class="feature-icon">🌱</span>
       <h4 class="feature-title">Open to All</h4>
-      <p class="feature-text">Both gardens are free and open to the public, offering rare opportunities to see hundreds of boxwood varieties side by side in a single visit.</p>
+      <p class="feature-text">All three gardens are free and open to the public. There is no admission fee. You can simply walk in and look at boxwoods. Please consider doing this.</p>
     </div>
   </div>
 
@@ -723,13 +795,13 @@
       <p class="section-eyebrow">About Buxus</p>
       <h2 class="about-title">A Genus with<br><em>Deep Roots</em></h2>
       <p class="about-text">
-        Boxwood — genus <em>Buxus</em> — has been a cornerstone of formal garden design since antiquity. Ancient Romans prized it for topiary; Renaissance gardens in Italy and France made it synonymous with elegance and structure. Today, over 90 species are recognized across temperate regions of Europe, Asia, Africa, and the Americas.
+        Boxwood — genus <em>Buxus</em> — has been a cornerstone of formal garden design since antiquity. Ancient Romans prized it for topiary; Renaissance gardens in Italy and France made it synonymous with elegance and structure. Today, over 90 species are recognized across temperate regions of Europe, Asia, Africa, and the Americas. It is, by any measure, a very successful shrub.
       </p>
       <p class="about-text">
         In the Mid-Atlantic United States, boxwood has been a garden staple for centuries, planted extensively throughout colonial-era estates and still thriving in historic landscapes across Virginia, Maryland, and D.C. The American Boxwood Society was founded in part to address threats from "boxwood decline" — a disease that devastated established plantings in Virginia during the mid-20th century. Today, boxwood blight remains an active concern, making the conservation work at Blandy and the National Arboretum more important than ever.
       </p>
       <p class="about-text">
-        The collections featured on this site represent the gold standard in Buxus stewardship — places where history, horticulture, and science converge.
+        The collections featured on this site represent the gold standard in Buxus stewardship — places where history, horticulture, and science converge. One of them also has a Cornwallis memorial, which is not something most shrub collections can claim.
       </p>
     </div>
   </section>
@@ -738,9 +810,9 @@
   <section id="visit">
     <div class="section-header" style="padding-top: 0;">
       <p class="section-eyebrow">Plan Your Visit</p>
-      <h2 class="section-title">Getting There</h2>
+      <h2 class="section-title">Getting There<br><span style="font-size:0.55em; font-style:italic; color:var(--stone);">All three. Obviously.</span></h2>
     </div>
-    <div class="visit-grid">
+    <div class="visit-grid" style="grid-template-columns: 1fr 1fr 1fr;">
 
       <div class="visit-card">
         <p class="visit-card-sub">Boyce, Virginia</p>
@@ -766,13 +838,25 @@
         <a class="visit-link" href="https://www.usna.usda.gov" target="_blank" rel="noopener">usna.usda.gov →</a>
       </div>
 
+      <div class="visit-card">
+        <p class="visit-card-sub">Yorktown, Virginia</p>
+        <h3 class="visit-card-title">Nelson House</h3>
+        <div class="visit-info">
+          <div class="visit-row"><strong>Address</strong> 507 Main St, Yorktown, VA 23690</div>
+          <div class="visit-row"><strong>Hours</strong> Grounds open daily; house tours vary seasonally</div>
+          <div class="visit-row"><strong>Admission</strong> Free (part of Colonial NHP)</div>
+          <div class="visit-row"><strong>From D.C.</strong> Approx. 175 miles southeast via I-64</div>
+        </div>
+        <a class="visit-link" href="https://www.nps.gov/york" target="_blank" rel="noopener">nps.gov/york →</a>
+      </div>
+
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <span class="footer-logo">Boxwood Gardens of the Mid-Atlantic</span>
-    <span class="footer-text">A personal garden showcase · Built with GitHub Pages</span>
+    <span class="footer-text">A personal garden showcase · Built with GitHub Pages · Nobody asked for this, and yet.</span>
   </footer>
 
 </body>
